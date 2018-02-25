@@ -1,4 +1,10 @@
+
 $(document).ready(function() {
+
+  var nameInput = prompt("What is your first name?");
+  var nameCaps = nameInput.toUpperCase().charAt(0) + nameInput.substr(1);
+  $(".username").text(nameCaps);
+
   $("#questions form").submit(function(event) {
     var work = parseInt($("#work").val());
     var trip = parseInt($("#trip").val());
