@@ -1,13 +1,53 @@
-.results {
+#results #zero {
   display: none;
 }
 
-.question-title {
-  font-size: 20px;
+#results #endurances {
+  display: none;
+}
+
+#results #tricks {
+  display: none;
+}
+
+#results #games {
+  display: none;
+}
+
+#results #downhills {
+  display: none;
+}
+
+#results #races {
+  display: none;
 }
 
 .page-title {
   color: black;
   text-align: center;
   font-size: 60px;
+}
+
+.question-title {
+  font-size: 20px;
+}
+
+.results-title {
+  font-size: 50px;
+  text-align: center;
+}
+
+.results-body {
+  font-size: 20px;
+  text-align: justify;
+}
+
+.event-title {
+  font-size: 30px;
+}
+
+.event-body {
+  font-size: 20px;
+  text-align: justify;
+  font-style: italic;
 }

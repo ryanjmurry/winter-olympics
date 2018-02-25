@@ -5,68 +5,70 @@
     <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
     <link href="css/master.css" rel="stylesheet" type="text/css">
     <script src="js/jquery-3.3.1.js"></script>
-    <script src="js/master.js"></script>
     <title>Winter Olympics Suggester</title>
   </head>
   <body>
     <div class="container">
       <h1 class="page-title">Winter Olympics Event Suggester</h1>
       <img class="img-responsive" src="img/winter-olympics-header.jpeg">
-      <div class="questions">
-        <h1 class="question-title"><span class="username">User</span>, if you had an unexpected day off, how would you prefer to spend it:</h1>
-        <select class="form-control" id="work">
-          <option value="0"></option>
-          <option value="1">Busting your ass in the yard or around the house</option>
-          <option value="2">Working on a personal project</option>
-          <option value="3">Mindlessly playing video games</option>
-          <option value="4">Running all those errands you’ve been putting off</option>
-          <option value="5">There are no days off</option>
-        </select>
-        <h1 class="question-title"><span class="username">User</span>,you’re about to take a long road trip...what is the first thing you do?</h1>
-        <select class="form-control" id="trip">
-          <option value="0"></option>
-          <option value="1">Make a checklist of everything you will need</option>
-          <option value="2">Map out your trip to find the fastest route</option>
-          <option value="3">You’ve done this so many times you don’t even need to think about what to do.</option>
-          <option value="4">Put together a killer playlist</option>
-          <option value="5">Nope...flying instead</option>
-        </select>
-        <h1 class="question-title"><span class="username">User</span>,you’re responsible for making dinner tomorrow night...thoughts?</h1>
-        <select class="form-control" id="dinner">
-          <option value="0"></option>
-          <option value="1">Take out … I ain’t got time to cook.</option>
-          <option value="2">A new dish you’ve never tried</option>
-          <option value="3">Your go to dinner meal</option>
-          <option value="4">A well planned 3 course meal</option>
-          <option value="5">Something that challenges your cooking skills</option>
-        </select>
-        <h1 class="question-title"><span class="username">User</span>,what is the first thing you do when you wake up in the morning?</h1>
-        <select class="form-control" id="morning">
-          <option value="0"></option>
-          <option value="1">Take a shower</option>
-          <option value="2">Fresh cup of coffee</option>
-          <option value="3">Glass of water, immediately</option>
-          <option value="4">Time to plan out the day ahead</option>
-          <option value="5">Does 11am count as the morning?</option>
-        </select>
-        <h1 class="question-title"><span class="username">User</span>,if you were forced to eat an egg right now, how would you ask it to be cooked?</h1>
-        <select class="form-control" id="eggs">
-          <option value="0"></option>
-          <option value="1">Over easy</option>
-          <option value="2">Scrambled</option>
-          <option value="3">Raw</option>
-          <option value="4">Hard-boiled</option>
-          <option value="5">Poached</option>
-        </select>
-        <br>
-        <button type="submit" class="btn-lg btn-danger">Show me my top Winter Olympics Sports!</button>
+      <div id="questions">
+        <form>
+          <h1 class="question-title"><span class="username">User</span>, if you had an unexpected day off, how would you prefer to spend it:</h1>
+          <select class="form-control" id="work">
+            <option value="0"></option>
+            <option value="1">Busting your ass in the yard or around the house</option>
+            <option value="2">Working on a personal project</option>
+            <option value="3">Mindlessly playing video games</option>
+            <option value="4">Running all those errands you’ve been putting off</option>
+            <option value="5">There are no days off</option>
+          </select>
+          <h1 class="question-title"><span class="username">User</span>,you’re about to take a long road trip...what is the first thing you do?</h1>
+          <select class="form-control" id="trip">
+            <option value="0"></option>
+            <option value="3">Make a checklist of everything you will need</option>
+            <option value="4">Map out your trip to find the fastest route</option>
+            <option value="5">You’ve done this so many times you don’t even need to think about what to do.</option>
+            <option value="2">Put together a killer playlist</option>
+            <option value="1">Nope...flying instead</option>
+          </select>
+          <h1 class="question-title"><span class="username">User</span>,you’re responsible for making dinner tomorrow night...thoughts?</h1>
+          <select class="form-control" id="dinner">
+            <option value="0"></option>
+            <option value="4">Take out … I ain’t got time to cook.</option>
+            <option value="2">A new dish you’ve never tried</option>
+            <option value="5">Your go to dinner meal</option>
+            <option value="3">A well planned 3 course meal</option>
+            <option value="1">Something that challenges your cooking skills</option>
+          </select>
+          <h1 class="question-title"><span class="username">User</span>,what is the first thing you do when you wake up in the morning?</h1>
+          <select class="form-control" id="morning">
+            <option value="0"></option>
+            <option value="1">Take a shower</option>
+            <option value="4">Fresh cup of coffee</option>
+            <option value="5">Glass of water, immediately</option>
+            <option value="3">Time to plan out the day ahead</option>
+            <option value="2">Does 11am count as the morning?</option>
+          </select>
+          <h1 class="question-title"><span class="username">User</span>,if you were forced to eat an egg right now, how would you ask it to be cooked?</h1>
+          <select class="form-control" id="eggs">
+            <option value="0"></option>
+            <option value="5">Over easy</option>
+            <option value="2">Scrambled</option>
+            <option value="4">Raw</option>
+            <option value="1">Hard-boiled</option>
+            <option value="3">Poached</option>
+          </select>
+          <br>
+          <button type="submit" class="btn-lg btn-danger">Show me my top Winter Olympics Sports!</button>
+        </form>
       </div>
-      <div class="results">
+      <div id="results">
         <div id="zero">
           <h1 class="results-title">Not Olympic Material!</h1>
           <p class="results-body">If you can't even answer 1 of 5 questions, you are not cut out to be an Olympian!</p>
+          <img class="event-image img-responsive" src="img/zero.jpeg" alt="zero">
         </div>
-        <div id="nordics">
+        <div id="endurances">
           <h1 class="results-title">Endurance Events</h1>
           <p class="results-body">Not the most thrilling of the Olympic sports, these olympic events ask competitors to demonstrate how good they are at enduring. Your choices indicate that you are dedicated, not afraid of hard work, and willing to do the boring things no one else wants to do.</p>
           <h1 class="event-title">Biathlon</h1>
@@ -133,5 +135,6 @@
         </div>
       </div>
     </div>
+    <script src="js/master.js"></script>
   </body>
 </html>
