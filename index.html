@@ -10,17 +10,127 @@
   </head>
   <body>
     <div class="container">
-      <h1>Which Winter Olympic Sport is Right for You?</h1>
-
+      <h1 class="page-title">Winter Olympics Event Suggester</h1>
+      <img class="img-responsive" src="img/winter-olympics-header.jpeg">
       <div class="questions">
-        <h3>How would you prefer to spend a day off of work:</h3>
+        <h1 class="question-title"><span class="username">User</span>, if you had an unexpected day off, how would you prefer to spend it:</h1>
         <select class="form-control" id="work">
-          <option value=""></option>
+          <option value="0"></option>
           <option value="1">Busting your ass in the yard or around the house</option>
           <option value="2">Working on a personal project</option>
           <option value="3">Mindlessly playing video games</option>
-          <option value="4"> Running all those errands you’ve been putting off</option>
-          <option value="5">There are no days off of work</option>
+          <option value="4">Running all those errands you’ve been putting off</option>
+          <option value="5">There are no days off</option>
+        </select>
+        <h1 class="question-title"><span class="username">User</span>,you’re about to take a long road trip...what is the first thing you do?</h1>
+        <select class="form-control" id="trip">
+          <option value="0"></option>
+          <option value="1">Make a checklist of everything you will need</option>
+          <option value="2">Map out your trip to find the fastest route</option>
+          <option value="3">You’ve done this so many times you don’t even need to think about what to do.</option>
+          <option value="4">Put together a killer playlist</option>
+          <option value="5">Nope...flying instead</option>
+        </select>
+        <h1 class="question-title"><span class="username">User</span>,you’re responsible for making dinner tomorrow night...thoughts?</h1>
+        <select class="form-control" id="dinner">
+          <option value="0"></option>
+          <option value="1">Take out … I ain’t got time to cook.</option>
+          <option value="2">A new dish you’ve never tried</option>
+          <option value="3">Your go to dinner meal</option>
+          <option value="4">A well planned 3 course meal</option>
+          <option value="5">Something that challenges your cooking skills</option>
+        </select>
+        <h1 class="question-title"><span class="username">User</span>,what is the first thing you do when you wake up in the morning?</h1>
+        <select class="form-control" id="morning">
+          <option value="0"></option>
+          <option value="1">Take a shower</option>
+          <option value="2">Fresh cup of coffee</option>
+          <option value="3">Glass of water, immediately</option>
+          <option value="4">Time to plan out the day ahead</option>
+          <option value="5">Does 11am count as the morning?</option>
+        </select>
+        <h1 class="question-title"><span class="username">User</span>,if you were forced to eat an egg right now, how would you ask it to be cooked?</h1>
+        <select class="form-control" id="eggs">
+          <option value="0"></option>
+          <option value="1">Over easy</option>
+          <option value="2">Scrambled</option>
+          <option value="3">Raw</option>
+          <option value="4">Hard-boiled</option>
+          <option value="5">Poached</option>
+        </select>
+        <br>
+        <button type="submit" class="btn-lg btn-danger">Show me my top Winter Olympics Sports!</button>
+      </div>
+      <div class="results">
+        <div id="zero">
+          <h1 class="results-title">Not Olympic Material!</h1>
+          <p class="results-body">If you can't even answer 1 of 5 questions, you are not cut out to be an Olympian!</p>
+        </div>
+        <div id="nordics">
+          <h1 class="results-title">Endurance Events</h1>
+          <p class="results-body">Not the most thrilling of the Olympic sports, these olympic events ask competitors to demonstrate how good they are at enduring. Your choices indicate that you are dedicated, not afraid of hard work, and willing to do the boring things no one else wants to do.</p>
+          <h1 class="event-title">Biathlon</h1>
+          <p class="event-body">Biathlon combines two sports - cross-country skiing and rifle shooting.</p>
+          <img class="event-image img-responsive" src="img/biathlon.jpeg" alt="biathlon">
+          <h1 class="event-title">Cross-Country Skiing</h1>
+          <p class="event-body">For this sport, skiers rely on their own locomotion to move across snow-covered terrain, rather than using lifts.</p>
+          <img class="event-image img-responsive" src="img/cross-country-skiing.jpeg" alt="cross-country-skiing">
+          <h1 class="event-title">Nordic Combined</h1>
+          <p class="event-body">This sport comprises two types of skiing - cross-country and jumping.</p>
+          <img class="event-image img-responsive" src="img/nordic-combined.jpeg" alt="nordic-combined">
+        </div>
+        <div id="tricks">
+          <h1 class="results-title">Tricks and Style</h1>
+          <p class="results-body">Substituting speed for style, these Olmpic events are judged on creativity and accuracy. Competitors must be willing to try new tricks and must do it all with their own flair. Your choices indicate that you are unique, creative, and would rather dance than run.</p>
+          <h1 class="event-title">Figure Skating</h1>
+          <p class="event-body">Figure skating sees individuals, duos, or groups performing on figure skates on ice.</p>
+          <img class="event-image img-responsive" src="img/figure-skating.jpeg" alt="figure-skating">
+          <h1 class="event-title">Freestyle Skiing</h1>
+          <p class="event-body">Commonly referred to as freeskiing and jibbing, this sport can consist of a skier performing aerial flips and spins. It can also see skiers sliding rails and boxes on their skis.</p>
+          <img class="event-image img-responsive" src="img/freestyle-skiing.jpeg" alt="freestyle-skiing">
+          <h1 class="event-title">Snowboarding</h1>
+          <p class="event-body">In some disciplines athletes descend a snow-covered hill on a snowboard, while in others they move on a purpose built ramp, performing tricks in the air.</p>
+          <img class="event-image img-responsive" src="img/snowboarding.jpeg" alt="snowboarding">
+        </div>
+        <div id="games">
+          <h1 class="results-title">Team Games</h1>
+          <p class="results-body">Of all the olympic events, only two of them are not based on time or judged. These events are for those competitors who enjoy strategy, whethere fast or slow paced. Competitors must be smart and mentally tough to be successful. Your choices indicate that you thoughtful, tactile, and well-planned. </p>
+          <h1 class="event-title">Curling</h1>
+          <p class="event-body">Sometimes referred to as 'chess on ice', curling is a strategic sport.</p>
+          <img class="event-image img-responsive" src="img/curling.jpeg" alt="curling">
+          <h1 class="event-title">Ice Hockey</h1>
+          <p class="event-body">Fast and sometimes violent, it's a contact sport played on an ice rink between two teams of six skaters, who try to drive a rubber puck into the opposing goal with hooked sticks.</p>
+          <img class="event-image img-responsive" src="img/ice-hockey.jpeg" alt="ice-hockey">
+        </div>
+        <div id="downhills">
+          <h1 class="results-title">Getting Downhill</h1>
+          <p class="results-body">Most people would think reaching the top of the mountain is the goal, but, unlike the masses, you want to get down the mountain as fast as you can. These sports all involve competitors moving down the mountain at extremely high speeds. Your choices indicate that you like to go fast, want that adrenaline rush, and don't mind getting a little crazy.</p>
+          <h1 class="event-title">Alpine Skiing</h1>
+          <p class="event-body">This is the sport of sliding down snow-covered hills on skis with fixed-heel bindings.</p>
+          <img class="event-image img-responsive" src="img/alpine-skiing.jpeg" alt="alpine">
+          <h1 class="event-title">Bobsleigh</h1>
+          <p class="event-body">Sometimes called bobsled, this involves teams of two or four people making timed runs down narrow, twisting, banked, ice tracks in a gravity-powered vessel.</p>
+          <img class="event-image img-responsive" src="img/bobsleigh.jpeg" alt="bobsleigh">
+          <h1 class="event-title">Luge</h1>
+          <p class="event-body">This sport involves riders hurtling down a slippery ice track feet first at high speed on a light sled. Lying on their back, they rely on their reflexes to steer.</p>
+          <img class="event-image img-responsive" src="img/luge.jpeg" alt="luge">
+          <h1 class="event-title">Skeleton</h1>
+          <p class="event-body">Riders hit speeds of 80 mph as they ride a small sled, head first, at high speed down a frozen track while lying face-down.</p>
+          <img class="event-image img-responsive" src="img/skeleton.jpeg" alt="skeleton">
+          <h1 class="event-title">Ski Jumping</h1>
+          <p class="event-body">Ski jumping involves jumping off hills on skis.</p>
+          <img class="event-image img-responsive" src="img/ski-jumping.jpeg" alt="ski-jumping">
+        </div>
+        <div id="races">
+          <h1 class="results-title">Circular Races</h1>
+          <p class="results-body">These Olympic events involve skaters racing around a circular track trying to finish with the fastest time. Broken into two types, Short Track and Long Track, each offers its own unique style of racing. Skaters must be disciplined, exhibit great stamina, and be able to turn on a dime. Your choices indicate that you like routines, are well-planned out, and become the master of tasks you do repeatedly.</p>
+          <h1 class="event-title">Short Track Speed Skating</h1>
+          <p class="event-body">Not for the faint-hearted, this sport sees skaters hitting speeds of 30 mph, and, with overtaking permitted, crashes aren't uncommon. It involves either four or six competitors racing around an oval track.</p>
+          <img class="event-image img-responsive" src="img/short-track.jpeg" alt="short-track">
+          <h1 class="event-title">Speed Skating</h1>
+          <p class="event-body">Speed skating is marked mainly by athletes racing in heats against the clock. Two skaters are simultaneously circling the track, but they are racing time more than they are in direct competition with one another.</p>
+          <img class="event-image img-responsive" src="img/speed-skating.jpeg" alt="speed-skating">
+        </div>
       </div>
     </div>
   </body>
